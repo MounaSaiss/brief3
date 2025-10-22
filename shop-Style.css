@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Rajdhani", sans-serif;
+  background-color: #000000;
+  color: #e0e0e0;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* .Boutique{
+    display: flex;
+    flex-direction: column;
+    color: blue;
+
+} */
+.shop-store{
+    display: flex;
+    flex-direction: column;
+
+
+}
+.tickets img{
+    width: 20rem;
+}
+.Merchandise img{
+    width: 20rem;
+}
+.shop-store{
+    background-color: red;
+    padding: 50px;
+    display: grid;
+    grid-template-columns: 100px 100px;
+}
+.shop-store div{
+   
+}

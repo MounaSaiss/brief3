@@ -1,0 +1,176 @@
+/* style header */
+.header {
+    
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background:black;
+  
+}
+#in{
+   color: green;
+}
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+  background-color: black;
+}
+
+.logo img{
+  height: 4rem; ;
+  width:5rem ;
+}
+
+.logo-text {
+  color:white;
+}
+.nav {
+ align-items: active;
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+  position: relative;
+ 
+}
+.nav-link1{
+color:#05F905;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+  position: relative;
+ 
+
+}
+
+.nav-link:hover {
+  color: #05F905;
+}
+
+.nav-link::after {
+  content: normal;
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #05F905;
+  transition: width 0.3s ease;
+}
+.nav-button{
+    border-radius: 40px ;
+    border: solid;
+    color: #05F905;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+/* style header end */
+
+.backround__club{
+    background-image: url(/photos/équipes.jpg);
+    
+    height: 50px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 50%;
+
+}
+.description{
+    position: relative;
+    text-align: center;
+    color: rgb(24, 255, 74);
+    font-family: "BBH Sans Hegarty", sans-serif;
+  font-weight: 400px;
+  font-style: normal;
+  font-size: 100px;
+  top :300px;
+/* padding-top: 5%; */
+  
+}
+.sponsor{
+    background-color: black;
+    display: grid;
+    /* grid-template-rows:  repeat(3,auto); */
+    grid-template-columns: repeat(3,auto);
+    margin-left: 30%;
+    margin-top: 190px;
+    height: 200px;
+    width: 200px;
+    gap: 3rem;
+   
+    
+}
+.players__cart{
+    display: grid;
+    border: 1px solid;
+    background-color: black;
+    
+    /* grid-template-columns: repeat(4,auto); */
+}
+.players_1{
+    display: grid;
+    grid-template-columns: repeat(6,auto);
+    grid-template-rows: repeat(5,auto);
+
+    border: 5px solid  rgb(0, 0, 0);
+    background-color: rgb(39, 39, 39);
+    height: 120px;
+    
+
+    
+/* grid-area: 1/1/4/2; */
+}
+.joueur{
+    display: grid;
+    border: 5px solid  rgb(0, 0, 0);
+    /* border-radius: 100px; */
+    padding-left: 5%;
+    background-color: rgb(39, 39, 39);
+    grid-template-columns: repeat(6,auto);
+    grid-template-rows: repeat(5,auto);
+}
+img{
+    height: 100px;
+    width: 100px;
+}
+h3,h4{
+    color: white;
+}
+.deux__section{
+    background-color: black;
+    padding-top: 50%;
+    
+}
+.players_1:hover{
+    color: rgb(128, 248, 128);
+    /* transform: scale(2,1); */
+}
+#sponsor__title{
+    color: #50ff50;
+    align-items: center;
+    /* padding-bottom: 200px; */
+}
+.footer__container{
+    display: grid;
+    background-color: black;
+    grid-template-columns: repeat(4,auto);
+}
+.orderlist__green{
+    color: #46ff46;
+}

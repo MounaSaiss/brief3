@@ -22,30 +22,279 @@ body {
   padding: 0 1.5rem;
 }
 
-/* .Boutique{
-    display: flex;
-    flex-direction: column;
-    color: blue;
+.container {
+  display: grid;
+  grid-template-columns: auto ;
+  grid-template-rows: auto ;  
+  /* background-color: dodgerblue; */
+  /* padding: 5px; */
+  gap: 5px;  
+  
+}
+.container div {
+  /* background-color: #f1f1f1; */
+  /* color:#25c420; */
+  /* padding: 10px; */
+  font-size: 30px;
+  text-align: center;
+}
+.store{
+    margin-top: 30px;
+    font-style: "Orbitron", sans-serif;
+    font-size: 150px;
+    color: #4be85d;
+    -webkit-text-stroke:2px  #4be85d;
+    -webkit-text-stroke-color:#4be85d;
+}
 
+.principale-image img{  
+    width: 50rem;
+    height: 50rem;
+    border-radius: 20px;
+    box-shadow: 0 0 80px rgba(50, 227, 34, 0.429);
+
+}
+.principale-image:hover{
+    transform: scale(1.1);
+}
+
+.shop-store{
+    margin-left: 9rem;
+}
+/* .shop-store:hover{
+    transform: scale(1.1);
 } */
-.shop-store{
+
+
+.text h4{
+    font-size: 5rem;
+    color: #34C759;
+    margin: 2rem;
+    font-weight:700px ;
+    
+}
+.store-princ h3{
+    color: black;
+    margin-top: 9rem;
     display: flex;
+    justify-content: center;
+    font-size:6rem ;
+    -webkit-text-stroke-width:  4px;
+     -webkit-text-stroke-color: rgb(19, 235, 59);
+     margin-left: 6rem;
+}
+.title-shop h3{
+    color: #000000;
+    -webkit-text-stroke-width:  4px;
+    -webkit-text-stroke-color: rgb(19, 235, 59);
+    font-size: 8rem;
+    margin-left: 20rem;
+    margin-top: 15rem;
+}
+
+
+
+.container1-sevenir{
+    margin: 100px auto;
+    width: 72rem;
+    border: 5px solid rgb(0, 0, 0);
+    display: flex;
+    overflow-x: auto;
+    /* overflow: hidden; */
+    justify-content: center;
+
+    
+    
+}
+.container1-sevenir::-webkit-scrollbar{
+    display: none;
+}
+.group{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4em;
+    animation:  14s  linear infinite ;
+    /* scroll  */
+    padding-right: 4em;
+}
+@keyframes scroll {
+    from {
+        transform:translateX(0);
+    }
+    to {
+        transform:translateX(-50%);
+    }
+}
+
+.group:hover {
+    animation-play-state: paused;
+}
+.card-prodacts{
+    flex: 0 0 5em;
+    /* height: 5rem; */
+    padding: 1em;
+    font-size: 3rem;
+    border-radius:  80px;;
+    text-align: center;
+    align-content: center;
+    justify-content: space-around;
+    background-color: rgba(65, 166, 57, 40%);
+}
+.prix-produits{
+    font-size: 90px;
+}
+.shop-button{
+    background-color: #34ed06;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    color: #000000;
+    padding: 10px 20px;
+    transition: 0.3s ease;
+    
+}
+.shop-button:hover {
+  background-color: #98CA43; 
+  transform: scale(1.05);   
+}
+
+
+
+.image-produit img {
+    width: 50rem;
+    height: 100%;
+}
+
+
+
+
+
+
+
+/* Header */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background: rgba(10, 10, 15, 0.8);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(59, 130, 246, 0.2);
+
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 130px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: "Orbitron", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+.logo-text {
+  color: #ffffff;
+}
+
+.logo-accent {
+  background: linear-gradient(135deg, #327118 0%, #34ed06 50%, #96de88 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.nav {
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-link {
+  color: #a0a0a0;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 4rem;
+  transition: color 0.3s ease;
+  position: relative;
+}
+
+.nav-link:hover {
+  color: #3b82f6;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #3b82f6, #8b5cf6);
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+.nav-link-effect {
+  color: #a0a0a0;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+  position: relative;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* for mini ipad */
+@media (max-width: 768px) {
+  .nav {
+    display: none;
+  }
+
+  .hero-title {
+    font-size: 2.5rem;
+  }
+
+  .hero-stats {
     flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .stat-divider {
+    width: 100%;
+    height: 1px;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+  }
 
 
-}
-.tickets img{
-    width: 20rem;
-}
-.Merchandise img{
-    width: 20rem;
-}
-.shop-store{
-    background-color: red;
-    padding: 50px;
-    display: grid;
-    grid-template-columns: 100px 100px;
-}
-.shop-store div{
-   
-}
+
+
+
+
+
+
+
+  

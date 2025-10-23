@@ -1,0 +1,73 @@
+
+@media (max-width: 768px) {
+  .inscrire {
+    grid-template-columns: 1fr;
+  }
+
+  .right-side {
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .inscrire {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.form1 {
+  padding: 20px;
+  background-color: #71E551;
+  border-radius: 10px;
+}
+
+.form1 form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.form1 input,
+.form1 button {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+.form1 button {
+  background-color: darkgreen;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.title1 {
+  color: #41A639;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.img3 img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .header-content {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .nav {
+    flex-direction: column;
+    gap: 1rem;
+    height: auto;
+  }
+
+  .nav-button {
+    width: 100%;
+  }
+}

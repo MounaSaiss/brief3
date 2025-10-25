@@ -103,10 +103,10 @@ body {
     align-items: center;
     justify-content: center;
     gap: 4em;
-    /* animation: scroll  14s  linear infinite ; */
+    /* animation: spin  14s  linear infinite ; */
     padding-right: 4em;
 }
-@keyframes scroll {
+@keyframes spin {
     from {
         transform:translateX(0);
     }
@@ -195,7 +195,7 @@ body {
 
 .logo-accent {
   background: linear-gradient(135deg, #327118 0%, #34ed06 50%, #96de88 100%);
-  -webkit-background-clip: text;
+  -kwebit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
